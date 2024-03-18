@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Deploy'){
       steps{
-        sh 'java -jar /var/lib/jenkins/workspace/SampleJava/target/demo-0.0.1-SNAPSHOT.jar'
+        sh 'java -jar /var/lib/jenkins/workspace/SampleJava/target/demo-0.0.1-SNAPSHOT.jar &'
       }
     }
   }
