@@ -10,4 +10,9 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
+	@GetMapping(value = "/")
+	public void getUsers() {
+		System.out.println("Hello From Java Application");
+	}
+
 }
