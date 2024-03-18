@@ -11,5 +11,7 @@ pipeline {
         sh 'mvn clean package'
       }
     }
+    stage('Deploy'){
+      sh 'java -jar /var/lib/jenkins/workspace/SampleJava/target/demo-0.0.1-SNAPSHOT.jar'
   }
 }
